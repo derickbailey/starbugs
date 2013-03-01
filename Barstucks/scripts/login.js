@@ -1,5 +1,11 @@
 (function (authorization) {
-    var el = new Everlive('Vvow4z7IQcyWmoU3');
+    //var el = new Everlive('Vvow4z7IQcyWmoU3');
+    that = this;
+    var el = new Everlive(
+    {
+        apiKey: 'Vvow4z7IQcyWmoU3',
+        masterKey: 'sample-master-key'
+    });
     
     authorization._token = {};
     authorization._user = null;
@@ -54,25 +60,26 @@
     authorization.getUser = function () {
         
         
-        return this._user;;
+        return this._user;
     };
     
     authorization.login = function() {
         var username = document.getElementById('txtName').value;
         var password = document.getElementById('txtPassword').value;
         
+        //location.href = 'App.html';
         
-        
-        Everlive.$.Users.login(username, password, 
-                                function (data) {
+        Everlive.$.Users.login(username, password).then( 
+                                function (res) {
                                     //alert(JSON.stringify(data));
-                                    authorization.setToken(data);
+                                    authorization.setToken(res);
                                     location.href = 'App.html';
                                 },
-                                function(error){
-                                    alert(JSON.stringify(error));
+                                function(err){
+                                    //alert("test" + JSON.stringify(error));
+                                    alert('unexpected error:' + err.message);
                                 }
-                );        
+                );     
     };
     authorization.init = function(){
         
