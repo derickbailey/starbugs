@@ -78,11 +78,12 @@
         
         //try to set the auth. token here
         var token = window.localStorage.getItem('auth_token');
+
         if(token) {            
             token = JSON.parse(token);
-            debugger;
             authorization._token = token;
-            Everlive.$.setup.token = token;
+            
+            Everlive.$.setup.token = token.result.access_token;
             console.log('authorization token found');
         }
         else {

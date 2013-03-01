@@ -101,6 +101,7 @@
     // the setup method is called on all crud operations
     var RemoteTransport_setup = kendo.data.RemoteTransport.prototype.setup;
     kendo.data.RemoteTransport.prototype.setup = function (options, type) {
+        
         if (!options.url && !this.options[type].url && this.options.typeName)
             options.url = Everlive.Request.buildUrl(Everlive.$.setup) + this.options.typeName;
         options.headers = Everlive.Request.buildAuthHeader(Everlive.$.setup);
