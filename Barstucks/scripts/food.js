@@ -10,7 +10,9 @@ function initFoodList() {
             change: function (e) {
             },
             sort: { field: "CreatedAt", dir: "desc" } 
-        })
+        }),
+        template: "${Name}"
+
     });
     
     
