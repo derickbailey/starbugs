@@ -17,17 +17,93 @@
             <ul class="icon-grid">
                 <li><a href="#" data-role="button" data-icon="bookmarks">Messages</a></li>
                 <li><a href="#" data-role="button" data-icon="favorites">Favorites</a></li>
-                <li><a href="#" data-role="button" data-icon="more">Coffees</a></li>
-                <li><a href="#" data-role="button" data-icon="cart">Food</a></li>
-                <li><a href="#" data-role="button" data-icon="delete">Drinks</a></li>
+                <li><a href="#coffee-list" data-role="button" data-icon="more">Coffees</a></li>
+                <li><a href="#food-list" data-role="button" data-icon="cart">Food</a></li>
+                <li><a href="#drinks-list" data-role="button" data-icon="delete">Drinks</a></li>
                 <li><a href="#" data-role="button" data-icon="settings">Settings</a></li>
                 <li><a href="#" data-role="button" data-icon="info">Help</a></li>
             </ul>
         </div>
-
+        <div data-role="view" id="coffee-list" data-title="Foods">
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>
+                    Blonde Roast
+                    <ul>
+                        <li><a>Decaf Willow Blend</a></li>
+                        <li><a>Invisible Blend</a></li>
+                        <li><a>Veranda Blend</a></li>
+                        <li><a>Willow Blend</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    Medium Roast
+                    <ul>
+                        <li><a>Breakfast Blend</a></li>
+                        <li><a>House Blend</a></li>
+                        <li><a>Iced Coffee Blend</a></li>
+                        <li><a>Kenya</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    Dark Roast
+                    <ul>
+                        <li><a>Caffe Verona</a></li>
+                        <li><a>Espresso Roast</a></li>
+                        <li><a>French Blend</a></li>
+                        <li><a>Sumatra</a></li>
+                        <li><a>Decaf Sumatra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div data-role="view" id="drinks-list" data-title="Drinks">
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>
+                    Brewed Coffee
+                    <ul>
+                        <li><a>Decaf Willow Blend</a></li>
+                        <li><a>Invisible Blend</a></li>
+                        <li><a>Veranda Blend</a></li>
+                        <li><a>Willow Blend</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    Espresso
+                    <ul>
+                        <li><a>Breakfast Blend</a></li>
+                        <li><a>House Blend</a></li>
+                        <li><a>Iced Coffee Blend</a></li>
+                        <li><a>Kenya</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    Tea
+                    <ul>
+                        <li><a>Caffe Verona</a></li>
+                        <li><a>Espresso Roast</a></li>
+                        <li><a>French Blend</a></li>
+                        <li><a>Sumatra</a></li>
+                        <li><a>Decaf Sumatra</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Kids Drinks &amp; Other Drinks
+                    <ul>
+                        <li><a>Caffe Misto</a></li>
+                        <li><a>Pike Place Roast</a></li>
+                        <li><a>Decaf Pike Place Roast</a></li>
+                        <li><a>Sumatra</a></li>
+                        <li><a>Decaf Sumatra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div data-role="view" id="tabstrip-mycards" data-title="Hello World!">
-            <div align='center'>
-                            <img align="middle"; img src='images/starbugs2-card.png'/>
+            <div align="center">
+                            <img src='images/starbugs2-card.png'/>
 
             </div>
             <h1 align="middle">The Fastest Way to Pay!</h1>
@@ -37,8 +113,8 @@
         </div>
 
         <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
-                <div align='center'>
-                    <img align="middle"; img src='images/starbugs3-rewards.png'/>
+                <div align="center">
+                    <img src='images/starbugs3-rewards.png'/>
             </div>
                         
                          <h1 align="middle">Make Every Visit Count!</h1>
@@ -48,8 +124,8 @@
         </div>
 
         <div data-role="view" id="tabstrip-egifts" data-title="Hello World!">
-            <div align='center'>
-                            <img align="middle"; img src='images/starbugs4-gift.png'/>
+            <div align="center">
+                            <img src='images/starbugs4-gift.png'/>
 
             </div>
             <h1 align="middle">Send a Starbucks Card eGift</h1>
