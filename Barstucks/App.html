@@ -54,11 +54,11 @@
 
         <div data-role="view" id="tabstrip-stores" data-title="Hello World!">
             <h1>Stores!</h1>
-            <p>
-                Icenium&trade; enables you to build cross-platform device applications regardless of your 
-                development platform by combining the convenience of a local development toolset with the 
-                power and flexibility of the cloud.
-            </p>
+            <div id="geoLocationContainer">
+                <div id="myLocation">Unable to get location information. Please check your network connection and try again.</div>
+                <a id="refreshMap" data-role="button" data-click="getLocation" data-icon="refresh">Refresh Location</a>
+                <div id="map_canvas"></div>
+            </div>
         </div>
         
 
