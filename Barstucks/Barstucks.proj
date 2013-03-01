@@ -70,6 +70,7 @@
     <Content Include="scripts\login.js" />
     <Content Include="scripts\reqwest.js" />
     <Content Include="scripts\rsvp.js" />
+    <Content Include="scripts\stores.js" />
     <Content Include="scripts\underscore.js" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
