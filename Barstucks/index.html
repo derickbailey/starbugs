@@ -7,6 +7,10 @@
         <script src="kendo/js/jquery.min.js"></script>
         <script src="kendo/js/kendo.mobile.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="scripts/reqwest.js"></script>
+        <script src="scripts/underscore.js"></script>
+        <script src="scripts/rsvp.js"></script>
+        <script src="scripts/everlive.js"></script>
         <script src="scripts/login.js"></script>
 
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
@@ -25,10 +29,14 @@
                 <label for="txtName" style="display: inline-block;">Enter your name:</label>
                 <input type="text" id="txtName" value="" />
             </div>
+            <div id='helloWorldInput'>
+                <label for="txtPassword" style="display: inline-block;">Password:</label>
+                <input type="text" id="txtPassword" value="" />
+            </div>
             <div id='helloWorldText' style="display:block;"></div>
             <div class="buttonArea">
                 <a id="resetButton" data-role="button" data-click="sayHelloReset" data-icon="refresh">Reset</a>
-                <a id="submitButton" data-role="button" data-click="sayHello" data-icon="compose">Log in!</a>
+                <a id="submitButton" data-role="button" data-click="auth.login" data-icon="compose">Log in!</a>
             </div>
             <a href="App.html">Go to the app</a>
         </div>
