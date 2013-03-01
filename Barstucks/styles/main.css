@@ -25,13 +25,20 @@ body
     padding: 7px;
 }
 
-ul .icon-grid {
+.icon-grid {
     list-style-type: none;
 }
 
-ul .icon-grid li {
+.icon-grid li{
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid #ccc;
+    margin: 5px;
+    height: 100px;
+    width: 75px;
+    border: 0px;
+    text-align: center;
+}
+        
+.icon-grid li img {
+    height: 75px;
+    width: 75px;
 }
