@@ -8,6 +8,7 @@
         <script src="kendo/js/kendo.mobile.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="scripts/hello-world.js"></script>
+        
         <script src="scripts/reqwest.js"></script>
         <script src="scripts/underscore.js"></script>
         <script src="scripts/rsvp.js"></script>
@@ -15,6 +16,7 @@
         <script src="scripts/kendo.data.everlive.js"></script>
         <script src="scripts/login.js"></script>
         <script src="scripts/food.js"></script>
+
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
     </head>
@@ -24,15 +26,15 @@
                 <li><a href="#" data-role="button" data-icon="bookmarks">Messages</a></li>
                 <li><a href="#" data-role="button" data-icon="favorites">Favorites</a></li>
                 <li><a href="#coffee-list" data-role="button" data-icon="more">Coffees</a></li>
-                <li><a href="#food-list" data-role="button" data-icon="cart">Food</a></li>
+                <li><a href="#food-list-view" data-role="button" data-icon="cart">Food</a></li>
                 <li><a href="#drinks-list" data-role="button" data-icon="delete">Drinks</a></li>
                 <li><a href="#" data-role="button" data-icon="settings">Settings</a></li>
                 <li><a href="#" data-role="button" data-icon="info">Help</a></li>
             </ul>
         </div>
 
-        <div data-role="view" data-init="initFoodList" id="food-list" data-title-"Foods">
-            <ul data-role="listview" data-style="inset" data-type="group">
+        <div data-role="view" data-init="initFoodList" id="food-list-view" data-title="Foods">
+            <ul id="food-list" data-role="listview" data-style="inset" data-type="group">
             </ul>    
         </div>
         
@@ -113,36 +115,32 @@
                 </li>
             </ul>
         </div>
-        <div data-role="view" id="tabstrip-mycards" data-title="Hello World!">
-            <div align="center">
-                            <img src='images/starbugs2-card.png'/>
 
-            </div>
-            <h1 align="middle">The Fastest Way to Pay!</h1>
-            <p align="middle">
-                Use your iPhone to pay with your card, check your balance, reload your card, and collect Rewards!
+        <div data-role="view" id="tabstrip-mycards" data-title="Hello World!">
+            <h1>My Cards!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
             </p>
         </div>
 
         <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
-                <div align="center">
-                    <img src='images/starbugs3-rewards.png'/>
-            </div>
-                        
-                         <h1 align="middle">Make Every Visit Count!</h1>
-            <p align="middle">
-                With My Starbucks Rewards you earn 1 Star every time you pay with your registered Card. The more Stars you collect, the bigger the rewards!
+            <h1>Rewards!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
             </p>
         </div>
 
         <div data-role="view" id="tabstrip-egifts" data-title="Hello World!">
-            <div align="center">
-                            <img src='images/starbugs4-gift.png'/>
-
-            </div>
-            <h1 align="middle">Send a Starbucks Card eGift</h1>
-            <p align="middle">
-                Send a friend a Starbucks Card eGift-it's the fastest, easiest way to say Happy Birthday, Thanks or anything at all!</p>
+            <h1>eGifts!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
+            </p>
         </div>
 
         <div data-role="view" id="tabstrip-stores" data-title="Hello World!">
