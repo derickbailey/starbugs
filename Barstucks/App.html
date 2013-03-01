@@ -15,8 +15,6 @@
         <script src="scripts/kendo.data.everlive.js"></script>
         <script src="scripts/login.js"></script>
         <script src="scripts/food.js"></script>
-        <script src="scripts/cards.js"></script>
-
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
     </head>
@@ -115,7 +113,7 @@
                 </li>
             </ul>
         </div>
-        <div data-role="view" data-init="initCardList" id="tabstrip-mycards" data-title="Hello World!">
+        <div data-role="view" id="tabstrip-mycards" data-title="Starbucks Card">
             <div align="center">
                             <img src='images/starbugs2-card.png'/>
 
@@ -124,23 +122,30 @@
             <p align="middle">
                 Use your iPhone to pay with your card, check your balance, reload your card, and collect Rewards!
             </p>
-            <h2>My Cards</h2>
-            <ul id="card-list" data-role="listview" data-style="inset" data-type="group">
-            </ul> 
+                <dl class="button">
+                <dt align="middle"><a href="#" data-role="button">Sign Up</a></dt>
+                <dt align="middle"><a href="#" data-role="button">Sign In</a></dt>
+            </dl>
+
         </div>
 
-        <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
+        <div data-role="view" id="tabstrip-rewards" data-title="Starbucks Rewards">
                 <div align="center">
                     <img src='images/starbugs3-rewards.png'/>
             </div>
-                        
+                       
                          <h1 align="middle">Make Every Visit Count!</h1>
             <p align="middle">
                 With My Starbucks Rewards you earn 1 Star every time you pay with your registered Card. The more Stars you collect, the bigger the rewards!
             </p>
+            
+                <dl class="button">
+                <dt align="middle"><a href="#" data-role="button">Sign Up</a></dt>
+                <dt align="middle"><a href="#" data-role="button">Sign In</a></dt>
+            </dl>
         </div>
 
-        <div data-role="view" id="tabstrip-egifts" data-title="Hello World!">
+        <div data-role="view" id="tabstrip-egifts" data-title="Starbucks eGifts">
             <div align="center">
                             <img src='images/starbugs4-gift.png'/>
 
@@ -148,9 +153,13 @@
             <h1 align="middle">Send a Starbucks Card eGift</h1> 
             <p align="middle">
                 Send a friend a Starbucks Card eGift-it's the fastest, easiest way to say Happy Birthday, Thanks or anything at all!</p>
-        </div>
+        
+            <dl class="button">
+                <dt align="middle"><a href="#" data-role="button">Sign Up</a></dt>
+                <dt align="middle"><a href="#" data-role="button">Sign In</a></dt>
+            </dl></div>
 
-        <div data-role="view" id="tabstrip-stores" data-title="Hello World!">
+        <div data-role="view" id="tabstrip-stores" data-title="Starbucks Stores">
             <h1>Stores!</h1>
             <div id="geoLocationContainer">
                 <div id="myLocation">Unable to get location information. Please check your network connection and try again.</div>
