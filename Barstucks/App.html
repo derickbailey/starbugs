@@ -13,8 +13,20 @@
         <link href="styles/main.css" rel="stylesheet" />
     </head>
     <body>
-        <div data-role="view" id="tabstrip-home" data-title="Hello World!">
-            <h1>Welcome!</h1>
+        <div data-role="view" id="tabstrip-home" data-title="Starbugs Home!">
+            <ul class="icon-grid">
+                <li><a href="#" data-role="button" data-icon="bookmarks">Messages</a></li>
+                <li><a href="#" data-role="button" data-icon="favorites">Favorites</a></li>
+                <li><a href="#" data-role="button" data-icon="more">Coffees</a></li>
+                <li><a href="#" data-role="button" data-icon="cart">Food</a></li>
+                <li><a href="#" data-role="button" data-icon="delete">Drinks</a></li>
+                <li><a href="#" data-role="button" data-icon="settings">Settings</a></li>
+                <li><a href="#" data-role="button" data-icon="info">Help</a></li>
+            </ul>
+        </div>
+
+        <div data-role="view" id="tabstrip-mycards" data-title="Hello World!">
+            <h1>My Cards!</h1>
             <p>
                 Icenium&trade; enables you to build cross-platform device applications regardless of your 
                 development platform by combining the convenience of a local development toolset with the 
@@ -22,27 +34,33 @@
             </p>
         </div>
 
-        <div data-role="view" id="tabstrip-uiinteraction" data-title="UI Interaction">
-            <h1>Say Hello!</h1>
-            <div id='helloWorldInput'>
-                <label for="txtName" style="display: inline-block;">Enter your name:</label>
-                <input type="text" id="txtName" value="" />
-            </div>
-            <div id='helloWorldText' style="display:block;"></div>
-            <div class="buttonArea">
-                <a id="resetButton" data-role="button" data-click="sayHelloReset" data-icon="refresh">Reset</a>
-                <a id="submitButton" data-role="button" data-click="sayHello" data-icon="compose">Submit</a>
-            </div>
+        <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
+            <h1>Rewards!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
+            </p>
         </div>
 
-        <div data-role="view" id="tabstrip-geolocation" data-title="Geolocation">
-            <h1>My Location</h1>
-            <div id="geoLocationContainer">
-                <div id="myLocation">Unable to get location information. Please check your network connection and try again.</div>
-                <a id="refreshMap" data-role="button" data-click="getLocation" data-icon="refresh">Refresh Location</a>
-                <div id="map_canvas"></div>
-            </div>
+        <div data-role="view" id="tabstrip-egifts" data-title="Hello World!">
+            <h1>eGifts!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
+            </p>
         </div>
+
+        <div data-role="view" id="tabstrip-stores" data-title="Hello World!">
+            <h1>Stores!</h1>
+            <p>
+                Icenium&trade; enables you to build cross-platform device applications regardless of your 
+                development platform by combining the convenience of a local development toolset with the 
+                power and flexibility of the cloud.
+            </p>
+        </div>
+        
 
         <div data-role="layout" data-id="mobile-tabstrip">
             <header data-role="header">
@@ -54,10 +72,10 @@
             <div data-role="footer">
                 <div data-role="tabstrip">
                     <a href="#tabstrip-home" data-icon="home">Home</a>
-                    <a href="#tabstrip-uiinteraction" data-icon="share">My Card</a>
-                    <a href="#tabstrip-geolocation" data-icon="globe">Rewards</a>
-                    <a href="#tabstrip-geolocation" data-icon="globe">eGifts</a>
-                    <a href="#tabstrip-geolocation" data-icon="globe">Stores</a>
+                    <a href="#tabstrip-mycards" data-icon="organize">My Card</a>
+                    <a href="#tabstrip-rewards" data-icon="delete">Rewards</a>
+                    <a href="#tabstrip-egifts" data-icon="mostviewed">eGifts</a>
+                    <a href="#tabstrip-stores" data-icon="globe">Stores</a>
                 </div>
             </div>
         </div>

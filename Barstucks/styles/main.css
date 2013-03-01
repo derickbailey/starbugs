@@ -24,3 +24,16 @@ body
     color: black;
     padding: 7px;
 }
+
+.icon-grid {
+    list-style-type: none;
+}
+
+.icon-grid li{
+    display: inline-block;
+    margin: 5px;
+    height: 100px;
+    width: 75px;
+    border: 0px;
+    text-align: center;
+}
