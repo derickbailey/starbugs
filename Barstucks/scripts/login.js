@@ -1,8 +1,18 @@
 (function (authorization) {
+    var el = new Everlive('Vvow4z7IQcyWmoU3');
+    
     authorization._token = {};
     authorization._user = null;
     authorization._logged = false;
+    
+    
+    
     authorization._getToken = function () {
+        if(!authorization._token) {
+            //try to get it from local storage
+            var token = window.localStorage.getItem('auth_token');    
+            authorization._token = token;
+        }
         return authorization._token.access_token;
     };
     
@@ -13,6 +23,7 @@
     authorization.setToken = function (tokenServerData) {
         authorization._logged = true;
         authorization._token = tokenServerData;
+        window.localStorage.setItem('auth_token', tokenServerData);
     };
     
     authorization.getAuthString = function () {
@@ -55,12 +66,13 @@
         var username = document.getElementById('txtName').value;
         var password = document.getElementById('txtPassword').value;
         
-        var el = new Everlive('Vvow4z7IQcyWmoU3');
+        
         
         Everlive.$.Users.login(username, password, 
                                 function (data) {
                                     //alert(JSON.stringify(data));
                                     authorization.setToken(data);
+                                    location.href = 'App.html';
                                 },
                                 function(error){
                                     alert(JSON.stringify(error));
