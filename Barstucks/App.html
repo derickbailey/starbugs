@@ -13,7 +13,9 @@
         <script src="scripts/underscore.js"></script>
         <script src="scripts/rsvp.js"></script>
         <script src="scripts/everlive.js"></script>
+        <script src="scripts/kendo.data.everlive.js"></script>
         <script src="scripts/login.js"></script>
+        <script src="scripts/food.js"></script>
 
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
@@ -31,14 +33,8 @@
             </ul>
         </div>
 
-        <div data-role="view" id="food-list" data-title-"Foods">
+        <div data-role="view" data-init="initFoodList" id="food-list" data-title-"Foods">
             <ul data-role="listview" data-style="inset" data-type="group">
-                <li>
-                  food.
-                    <ul>
-                        <li>stuff</li>
-                    </ul>
-                </li>
             </ul>    
         </div>
         

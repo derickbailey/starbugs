@@ -67,6 +67,7 @@
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
     <Content Include="scripts\cards.js" />
     <Content Include="scripts\everlive.js" />
+    <Content Include="scripts\food.js" />
     <Content Include="scripts\hello-world.js" />
     <Content Include="scripts\kendo.data.everlive.js" />
     <Content Include="scripts\login.js" />
