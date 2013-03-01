@@ -67,7 +67,7 @@
         var username = document.getElementById('txtName').value;
         var password = document.getElementById('txtPassword').value;
         
-        location.href = 'App.html';
+        //location.href = 'App.html';
         
         Everlive.$.Users.login(username, password).then( 
                                 function (res) {
