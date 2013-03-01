@@ -38,3 +38,6 @@ input
     border: 0px;
     text-align: center;
 }
+.km-ios6 *:not(.km-tabstrip):not(.km-buttongroup)>.km-button {
+background-color: #00592D;
+}
