@@ -4,7 +4,7 @@
     var el = new Everlive(
     {
         apiKey: 'Vvow4z7IQcyWmoU3',
-        masterKey: 'sample-master-key'
+        masterKey: 'hOPgNVejb3sZwTnAjAj6lJtejixQ2h2R'
     });
     
     authorization._token = {};
@@ -67,7 +67,7 @@
         var username = document.getElementById('txtName').value;
         var password = document.getElementById('txtPassword').value;
         
-        //location.href = 'App.html';
+        location.href = 'App.html';
         
         Everlive.$.Users.login(username, password).then( 
                                 function (res) {
@@ -79,7 +79,7 @@
                                     //alert("test" + JSON.stringify(error));
                                     alert('unexpected error:' + err.message);
                                 }
-                );     
+                );  
     };
     authorization.init = function(){
         
