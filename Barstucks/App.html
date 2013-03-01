@@ -8,6 +8,12 @@
         <script src="kendo/js/kendo.mobile.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="scripts/hello-world.js"></script>
+        
+        <script src="scripts/reqwest.js"></script>
+        <script src="scripts/underscore.js"></script>
+        <script src="scripts/rsvp.js"></script>
+        <script src="scripts/everlive.js"></script>
+        <script src="scripts/login.js"></script>
 
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
@@ -17,11 +23,22 @@
             <ul class="icon-grid">
                 <li><a href="#" data-role="button" data-icon="bookmarks">Messages</a></li>
                 <li><a href="#" data-role="button" data-icon="favorites">Favorites</a></li>
-                <li><a href="#" data-role="button" data-icon="more">Coffees</a></li>
-                <li><a href="#" data-role="button" data-icon="cart">Food</a></li>
+                <li><a href="#coffee-list" data-role="button" data-icon="more">Coffees</a></li>
+                <li><a href="#food-list" data-role="button" data-icon="cart">Food</a></li>
                 <li><a href="#" data-role="button" data-icon="delete">Drinks</a></li>
                 <li><a href="#" data-role="button" data-icon="settings">Settings</a></li>
                 <li><a href="#" data-role="button" data-icon="info">Help</a></li>
+            </ul>
+        </div>
+
+        <div data-role="view" id="food-list" data-title="Foods">
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>
+                    Bakery
+                    <ul>
+                        <li data-icon="toprated"><a>Nairobi</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 

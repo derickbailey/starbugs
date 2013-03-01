@@ -68,8 +68,10 @@
     <Content Include="kendo\styles\images\KendoUI.ttf" />
     <Content Include="kendo\styles\images\KendoUI.woff" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="scripts\cards.js" />
     <Content Include="scripts\everlive.js" />
     <Content Include="scripts\hello-world.js" />
+    <Content Include="scripts\kendo.data.everlive.js" />
     <Content Include="scripts\login.js" />
     <Content Include="scripts\reqwest.js" />
     <Content Include="scripts\rsvp.js" />
