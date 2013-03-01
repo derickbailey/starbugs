@@ -24,3 +24,14 @@ body
     color: black;
     padding: 7px;
 }
+
+ul .icon-grid {
+    list-style-type: none;
+}
+
+ul .icon-grid li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ccc;
+}
