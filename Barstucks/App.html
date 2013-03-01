@@ -26,16 +26,17 @@
                 <li><a href="#" data-role="button" data-icon="bookmarks">Messages</a></li>
                 <li><a href="#" data-role="button" data-icon="favorites">Favorites</a></li>
                 <li><a href="#coffee-list" data-role="button" data-icon="more">Coffees</a></li>
-                <li><a href="#food-list" data-role="button" data-icon="cart">Food</a></li>
+                <li><a href="#food-list-view" data-role="button" data-icon="cart">Food</a></li>
                 <li><a href="#drinks-list" data-role="button" data-icon="delete">Drinks</a></li>
                 <li><a href="#" data-role="button" data-icon="settings">Settings</a></li>
                 <li><a href="#" data-role="button" data-icon="info">Help</a></li>
             </ul>
         </div>
 
-        <div data-role="view" data-init="initFoodList" id="food-list" data-title-"Foods">
-            <ul data-role="listview" data-style="inset" data-type="group">
+        <div data-role="view" data-init="initFoodList" id="food-list-view" data-title-"Foods">
+            <ul id="food-list" data-role="listview" data-style="inset" data-type="group">
             </ul>    
+            <div data-role="button" data-icon="refresh" onClick="initFoodList();">refresh</div>
         </div>
         
         <div data-role="view" id="coffee-list" data-title="Coffees">
@@ -127,6 +128,8 @@
             <h2>My Cards</h2>
             <ul id="card-list" data-role="listview" data-style="inset" data-type="group">
             </ul> 
+            <div data-role="button" data-icon="refresh" onClick="initCardList();">refresh</div>
+
         </div>
 
         <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
