@@ -113,21 +113,12 @@
                 </li>
             </ul>
         </div>
-        <div data-role="view" id="tabstrip-mycards" data-title="Starbucks Card">
-            <div align="center">
-                            <img src='images/starbugs2-card.png'/>
-
-            </div>
-            <h1 align="middle">The Fastest Way to Pay!</h1>
-            <p align="middle">
-                Use your iPhone to pay with your card, check your balance, reload your card, and collect Rewards!
-            </p>
-                <dl class="button">
-                <dt align="middle"><a href="#" data-role="button">Sign Up</a></dt>
-                <dt align="middle"><a href="#" data-role="button">Sign In</a></dt>
-            </dl>
-
+        
+         <div data-role="view" data-init="initCardsList" id="card-list" data-title-"Cards">
+            <ul data-role="listview" data-style="inset" data-type="group">
+            </ul>    
         </div>
+        
 
         <div data-role="view" id="tabstrip-rewards" data-title="Starbucks Rewards">
                 <div align="center">

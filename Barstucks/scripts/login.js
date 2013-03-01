@@ -4,7 +4,7 @@
     var el = new Everlive(
     {
         apiKey: 'Vvow4z7IQcyWmoU3',
-        masterKey: 'hOPgNVejb3sZwTnAjAj6lJtejixQ2h2R'
+        scheme : 'https'
     });
     
     authorization._token = {};
