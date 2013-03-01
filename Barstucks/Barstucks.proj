@@ -61,6 +61,7 @@
     <Content Include="images\starbugs1-logo.png" />
     <Content Include="images\starbugs2-card.png" />
     <Content Include="images\starbugs3-rewards.png" />
+    <Content Include="images\starbugs4-gift.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
