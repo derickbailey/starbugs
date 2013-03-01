@@ -116,15 +116,11 @@
             </ul>
         </div>
 
-        <div data-role="view" id="tabstrip-mycards" data-title="Hello World!">
-            <h1>My Cards!</h1>
-            <p>
-                Icenium&trade; enables you to build cross-platform device applications regardless of your 
-                development platform by combining the convenience of a local development toolset with the 
-                power and flexibility of the cloud.
-            </p>
+        <div data-role="view" data-init="initCardList" id="tabstrip-mycards" data-title="My Cards">
+            <ul id="card-list" data-role="listview" data-style="inset" data-type="group">
+            </ul>    
         </div>
-
+        
         <div data-role="view" id="tabstrip-rewards" data-title="Hello World!">
             <h1>Rewards!</h1>
             <p>

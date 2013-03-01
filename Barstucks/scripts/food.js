@@ -1,5 +1,4 @@
 function initFoodList() {
-    debugger;
     $("#food-list").kendoMobileListView({
         dataSource: new kendo.data.DataSource({
             type: "everlive", 
